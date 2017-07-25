@@ -4,6 +4,7 @@
 Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
+import sys
 import time
 import logging
 import optparse
@@ -30,7 +31,12 @@ def help():
     apiparser.add_option("-t", "--temper", help="编码脚本 混合模式或者单个模式 eg:Big ", action="store")
     apiparser.add_option("-m", "--model", help="扫描模式 eg:light | heavy", action="store", default='light')
     apiparser.add_option("--list", help="列出所有编码脚本", action="store_true")
-    (args, _) = apiparser.parse_args()
+    try:
+        (args, _) = apiparser.parse_args()
+    except UnicodeDecodeError:
+        reload(sys)
+        sys.setdefaultencoding('utf8')
+        (args, _) = apiparser.parse_args()
     is_set_url = True if args.url else False
     if args.level < 1 or args.level > 10:
         logger = log.get_logger()
