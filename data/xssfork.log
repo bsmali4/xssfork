@@ -1,0 +1,359 @@
+[2017-07-25 10:07:40,743] [ERROR] 错误原因1:url，readfile至少设置一个
+[2017-07-25 10:07:40,743] [ERROR] 错误原因2:url，readfile不能同时设置
+[2017-07-25 10:07:40,744] [INFO] 查看帮组:python xssfork.py -h
+[2017-07-25 10:07:44,133] [DEBUG] 总共有4个编码脚本
+[2017-07-25 10:07:44,133] [DEBUG] [0]10hex_encode
+[2017-07-25 10:07:44,133] [DEBUG] [1]16hex_encode
+[2017-07-25 10:07:44,133] [DEBUG] [2]addkeywords
+[2017-07-25 10:07:44,133] [DEBUG] [3]uppercase
+[2017-07-25 10:07:55,688] [DEBUG] checking if url is available
+[2017-07-25 10:07:56,335] [INFO] url connection success 
+[2017-07-25 10:07:56,335] [DEBUG] checking if destination is available
+[2017-07-25 10:07:56,335] [INFO] destination connection success 
+[2017-07-25 10:07:56,335] [INFO] loading default paloads
+[2017-07-25 10:07:56,337] [INFO] loading default paloads success
+[2017-07-25 10:07:56,337] [INFO] 537 payloads loaded
+[2017-07-25 10:08:02,677] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:08:10,881] [DEBUG] checking if url is available
+[2017-07-25 10:08:11,133] [INFO] url connection success 
+[2017-07-25 10:08:11,133] [DEBUG] checking if destination is available
+[2017-07-25 10:08:11,133] [INFO] destination connection success 
+[2017-07-25 10:08:11,134] [INFO] loading default paloads
+[2017-07-25 10:08:11,134] [INFO] loading default paloads success
+[2017-07-25 10:08:11,134] [DEBUG] check temper 10hex_encode is existed
+[2017-07-25 10:08:11,139] [INFO] temper 10hex_encode is existed
+[2017-07-25 10:08:12,158] [INFO] 580 payloads loaded
+[2017-07-25 10:08:17,965] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:08:26,422] [DEBUG] checking if url is available
+[2017-07-25 10:08:26,723] [INFO] url connection success 
+[2017-07-25 10:08:26,723] [DEBUG] checking if destination is available
+[2017-07-25 10:08:26,723] [INFO] destination connection success 
+[2017-07-25 10:08:26,723] [INFO] loading default paloads
+[2017-07-25 10:08:26,724] [INFO] loading default paloads success
+[2017-07-25 10:08:26,724] [DEBUG] check temper 10hex_encode is existed
+[2017-07-25 10:08:26,725] [INFO] temper 10hex_encode is existed
+[2017-07-25 10:08:26,725] [DEBUG] check temper uppercase is existed
+[2017-07-25 10:08:26,727] [INFO] temper uppercase is existed
+[2017-07-25 10:08:27,298] [INFO] 891 payloads loaded
+[2017-07-25 10:08:36,969] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:13:34,822] [DEBUG] checking if url is available
+[2017-07-25 10:13:34,838] [INFO] url connection success 
+[2017-07-25 10:13:34,839] [DEBUG] checking if destination is available
+[2017-07-25 10:13:34,839] [INFO] destination connection success 
+[2017-07-25 10:13:34,839] [INFO] loading default paloads
+[2017-07-25 10:13:34,840] [INFO] loading default paloads success
+[2017-07-25 10:13:34,840] [INFO] 537 payloads loaded
+[2017-07-25 10:13:40,451] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:17:23,014] [DEBUG] checking if url is available
+[2017-07-25 10:17:23,025] [INFO] url connection success 
+[2017-07-25 10:17:23,025] [DEBUG] checking if destination is available
+[2017-07-25 10:17:23,025] [INFO] destination connection success 
+[2017-07-25 10:17:23,025] [INFO] loading default paloads
+[2017-07-25 10:17:23,026] [INFO] loading default paloads success
+[2017-07-25 10:17:23,026] [INFO] 221 payloads loaded
+[2017-07-25 10:17:24,006] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:17:37,061] [DEBUG] checking if url is available
+[2017-07-25 10:17:37,075] [INFO] url connection success 
+[2017-07-25 10:17:37,075] [DEBUG] checking if destination is available
+[2017-07-25 10:17:37,075] [INFO] destination connection success 
+[2017-07-25 10:17:37,075] [INFO] loading default paloads
+[2017-07-25 10:17:37,076] [INFO] loading default paloads success
+[2017-07-25 10:17:37,076] [DEBUG] check temper uppercase is existed
+[2017-07-25 10:17:37,078] [INFO] temper uppercase is existed
+[2017-07-25 10:17:37,082] [INFO] 394 payloads loaded
+[2017-07-25 10:17:41,735] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:17:46,918] [DEBUG] checking if url is available
+[2017-07-25 10:17:46,930] [INFO] url connection success 
+[2017-07-25 10:17:46,930] [DEBUG] checking if destination is available
+[2017-07-25 10:17:46,930] [INFO] destination connection success 
+[2017-07-25 10:17:46,931] [INFO] loading default paloads
+[2017-07-25 10:17:46,931] [INFO] loading default paloads success
+[2017-07-25 10:17:46,931] [DEBUG] check temper uppercase is existed
+[2017-07-25 10:17:46,932] [INFO] temper uppercase is existed
+[2017-07-25 10:17:46,936] [INFO] 391 payloads loaded
+[2017-07-25 10:18:09,523] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:18:53,638] [DEBUG] checking if url is available
+[2017-07-25 10:18:53,652] [INFO] url connection success 
+[2017-07-25 10:18:53,652] [DEBUG] checking if destination is available
+[2017-07-25 10:18:53,653] [INFO] destination connection success 
+[2017-07-25 10:18:53,653] [INFO] loading default paloads
+[2017-07-25 10:18:53,653] [INFO] loading default paloads success
+[2017-07-25 10:18:53,654] [DEBUG] check temper uppercase is existed
+[2017-07-25 10:18:53,654] [INFO] temper uppercase is existed
+[2017-07-25 10:18:53,658] [INFO] 384 payloads loaded
+[2017-07-25 10:19:13,937] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:27:34,372] [DEBUG] checking if url is available
+[2017-07-25 10:27:34,394] [INFO] url connection success 
+[2017-07-25 10:27:34,394] [DEBUG] checking if destination is available
+[2017-07-25 10:27:34,394] [INFO] destination connection success 
+[2017-07-25 10:27:34,394] [INFO] loading default paloads
+[2017-07-25 10:27:34,395] [INFO] loading default paloads success
+[2017-07-25 10:27:34,395] [INFO] 221 payloads loaded
+[2017-07-25 10:27:40,995] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:27:59,925] [DEBUG] checking if url is available
+[2017-07-25 10:27:59,940] [INFO] url connection success 
+[2017-07-25 10:27:59,941] [DEBUG] checking if destination is available
+[2017-07-25 10:27:59,941] [INFO] destination connection success 
+[2017-07-25 10:27:59,941] [INFO] loading default paloads
+[2017-07-25 10:27:59,942] [INFO] loading default paloads success
+[2017-07-25 10:27:59,942] [INFO] 221 payloads loaded
+[2017-07-25 10:28:09,163] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 10:32:52,833] [DEBUG] checking if url is available
+[2017-07-25 10:32:52,852] [INFO] url connection success 
+[2017-07-25 10:32:52,853] [DEBUG] checking if destination is available
+[2017-07-25 10:32:52,853] [INFO] destination connection success 
+[2017-07-25 10:32:52,853] [INFO] loading default paloads
+[2017-07-25 10:32:52,854] [INFO] loading default paloads success
+[2017-07-25 10:32:52,854] [INFO] 221 payloads loaded
+[2017-07-25 10:33:49,537] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:34:53,053] [DEBUG] checking if url is available
+[2017-07-25 10:34:53,070] [INFO] url connection success 
+[2017-07-25 10:34:53,070] [DEBUG] checking if destination is available
+[2017-07-25 10:34:53,070] [INFO] destination connection success 
+[2017-07-25 10:34:53,071] [INFO] loading default paloads
+[2017-07-25 10:34:53,072] [INFO] loading default paloads success
+[2017-07-25 10:34:53,072] [INFO] 221 payloads loaded
+[2017-07-25 10:35:19,239] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:35:44,067] [DEBUG] checking if url is available
+[2017-07-25 10:35:44,079] [INFO] url connection success 
+[2017-07-25 10:35:44,080] [DEBUG] checking if destination is available
+[2017-07-25 10:35:44,080] [INFO] destination connection success 
+[2017-07-25 10:35:44,080] [INFO] loading default paloads
+[2017-07-25 10:35:44,081] [INFO] loading default paloads success
+[2017-07-25 10:35:44,081] [INFO] 112 payloads loaded
+[2017-07-25 10:36:38,757] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:36:47,778] [DEBUG] checking if url is available
+[2017-07-25 10:36:47,792] [INFO] url connection success 
+[2017-07-25 10:36:47,793] [DEBUG] checking if destination is available
+[2017-07-25 10:36:47,793] [INFO] destination connection success 
+[2017-07-25 10:36:47,793] [INFO] loading default paloads
+[2017-07-25 10:36:47,793] [INFO] loading default paloads success
+[2017-07-25 10:36:47,794] [INFO] 7 payloads loaded
+[2017-07-25 10:37:31,352] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:38:51,806] [DEBUG] checking if url is available
+[2017-07-25 10:38:51,821] [INFO] url connection success 
+[2017-07-25 10:38:51,821] [DEBUG] checking if destination is available
+[2017-07-25 10:38:51,821] [INFO] destination connection success 
+[2017-07-25 10:38:51,821] [INFO] loading default paloads
+[2017-07-25 10:38:51,822] [INFO] loading default paloads success
+[2017-07-25 10:38:51,822] [INFO] 7 payloads loaded
+[2017-07-25 10:39:12,116] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:39:35,628] [DEBUG] checking if url is available
+[2017-07-25 10:39:35,645] [INFO] url connection success 
+[2017-07-25 10:39:35,645] [DEBUG] checking if destination is available
+[2017-07-25 10:39:35,646] [INFO] destination connection success 
+[2017-07-25 10:39:35,646] [INFO] loading default paloads
+[2017-07-25 10:39:35,646] [INFO] loading default paloads success
+[2017-07-25 10:39:35,646] [INFO] 7 payloads loaded
+[2017-07-25 10:40:14,278] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:40:41,191] [DEBUG] checking if url is available
+[2017-07-25 10:40:41,205] [INFO] url connection success 
+[2017-07-25 10:40:41,206] [DEBUG] checking if destination is available
+[2017-07-25 10:40:41,206] [INFO] destination connection success 
+[2017-07-25 10:40:41,206] [INFO] loading default paloads
+[2017-07-25 10:40:41,206] [INFO] loading default paloads success
+[2017-07-25 10:40:41,207] [INFO] 7 payloads loaded
+[2017-07-25 10:40:56,816] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:41:22,285] [DEBUG] checking if url is available
+[2017-07-25 10:41:22,366] [INFO] url connection success 
+[2017-07-25 10:41:22,367] [DEBUG] checking if destination is available
+[2017-07-25 10:41:22,367] [INFO] destination connection success 
+[2017-07-25 10:41:22,368] [INFO] loading default paloads
+[2017-07-25 10:41:22,368] [INFO] loading default paloads success
+[2017-07-25 10:41:22,368] [INFO] 7 payloads loaded
+[2017-07-25 10:41:48,469] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:42:14,848] [DEBUG] checking if url is available
+[2017-07-25 10:42:14,863] [INFO] url connection success 
+[2017-07-25 10:42:14,864] [DEBUG] checking if destination is available
+[2017-07-25 10:42:14,864] [INFO] destination connection success 
+[2017-07-25 10:42:14,864] [INFO] loading default paloads
+[2017-07-25 10:42:14,865] [INFO] loading default paloads success
+[2017-07-25 10:42:14,865] [INFO] 7 payloads loaded
+[2017-07-25 10:42:36,164] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:42:46,715] [DEBUG] checking if url is available
+[2017-07-25 10:42:46,729] [INFO] url connection success 
+[2017-07-25 10:42:46,729] [DEBUG] checking if destination is available
+[2017-07-25 10:42:46,730] [INFO] destination connection success 
+[2017-07-25 10:42:46,730] [INFO] loading default paloads
+[2017-07-25 10:42:46,730] [INFO] loading default paloads success
+[2017-07-25 10:42:46,730] [INFO] 7 payloads loaded
+[2017-07-25 10:42:51,836] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:43:53,576] [DEBUG] checking if url is available
+[2017-07-25 10:43:53,590] [INFO] url connection success 
+[2017-07-25 10:43:53,590] [DEBUG] checking if destination is available
+[2017-07-25 10:43:53,590] [INFO] destination connection success 
+[2017-07-25 10:43:53,590] [INFO] loading default paloads
+[2017-07-25 10:43:53,591] [INFO] loading default paloads success
+[2017-07-25 10:43:53,591] [INFO] 7 payloads loaded
+[2017-07-25 10:44:05,802] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:44:13,873] [DEBUG] checking if url is available
+[2017-07-25 10:44:13,884] [INFO] url connection success 
+[2017-07-25 10:44:13,885] [DEBUG] checking if destination is available
+[2017-07-25 10:44:13,885] [INFO] destination connection success 
+[2017-07-25 10:44:13,885] [INFO] loading default paloads
+[2017-07-25 10:44:13,885] [INFO] loading default paloads success
+[2017-07-25 10:44:13,886] [INFO] 7 payloads loaded
+[2017-07-25 10:44:13,899] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:44:23,560] [DEBUG] checking if url is available
+[2017-07-25 10:44:23,575] [INFO] url connection success 
+[2017-07-25 10:44:23,575] [DEBUG] checking if destination is available
+[2017-07-25 10:44:23,575] [INFO] destination connection success 
+[2017-07-25 10:44:23,576] [INFO] loading default paloads
+[2017-07-25 10:44:23,576] [INFO] loading default paloads success
+[2017-07-25 10:44:23,576] [INFO] 7 payloads loaded
+[2017-07-25 10:44:27,259] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:44:32,135] [DEBUG] checking if url is available
+[2017-07-25 10:44:32,147] [INFO] url connection success 
+[2017-07-25 10:44:32,148] [DEBUG] checking if destination is available
+[2017-07-25 10:44:32,149] [INFO] destination connection success 
+[2017-07-25 10:44:32,149] [INFO] loading default paloads
+[2017-07-25 10:44:32,149] [INFO] loading default paloads success
+[2017-07-25 10:44:32,149] [INFO] 7 payloads loaded
+[2017-07-25 10:44:36,120] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:44:55,892] [DEBUG] checking if url is available
+[2017-07-25 10:44:55,909] [INFO] url connection success 
+[2017-07-25 10:44:55,910] [DEBUG] checking if destination is available
+[2017-07-25 10:44:55,910] [INFO] destination connection success 
+[2017-07-25 10:44:55,910] [INFO] loading default paloads
+[2017-07-25 10:44:55,911] [INFO] loading default paloads success
+[2017-07-25 10:44:55,911] [INFO] 70 payloads loaded
+[2017-07-25 10:52:42,567] [DEBUG] checking if url is available
+[2017-07-25 10:52:42,628] [INFO] url connection success 
+[2017-07-25 10:52:42,628] [DEBUG] checking if destination is available
+[2017-07-25 10:52:42,628] [INFO] destination connection success 
+[2017-07-25 10:52:42,629] [INFO] loading default paloads
+[2017-07-25 10:52:42,630] [INFO] loading default paloads success
+[2017-07-25 10:52:42,631] [INFO] 70 payloads loaded
+[2017-07-25 10:56:48,008] [DEBUG] checking if url is available
+[2017-07-25 10:56:48,022] [INFO] url connection success 
+[2017-07-25 10:56:48,022] [DEBUG] checking if destination is available
+[2017-07-25 10:56:48,022] [INFO] destination connection success 
+[2017-07-25 10:56:48,023] [INFO] loading default paloads
+[2017-07-25 10:56:48,023] [INFO] loading default paloads success
+[2017-07-25 10:56:48,024] [INFO] 70 payloads loaded
+[2017-07-25 10:56:58,118] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 10:57:16,692] [DEBUG] checking if url is available
+[2017-07-25 10:57:16,707] [INFO] url connection success 
+[2017-07-25 10:57:16,707] [DEBUG] checking if destination is available
+[2017-07-25 10:57:16,707] [INFO] destination connection success 
+[2017-07-25 10:57:16,708] [INFO] loading default paloads
+[2017-07-25 10:57:16,708] [INFO] loading default paloads success
+[2017-07-25 10:57:16,708] [INFO] 7 payloads loaded
+[2017-07-25 10:57:22,552] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 11:01:46,647] [DEBUG] checking if url is available
+[2017-07-25 11:01:46,660] [INFO] url connection success 
+[2017-07-25 11:01:46,661] [DEBUG] checking if destination is available
+[2017-07-25 11:01:46,661] [INFO] destination connection success 
+[2017-07-25 11:01:46,661] [INFO] loading default paloads
+[2017-07-25 11:01:46,662] [INFO] loading default paloads success
+[2017-07-25 11:01:46,662] [INFO] 537 payloads loaded
+[2017-07-25 11:03:52,809] [WARNING] [!] xssfork can not find XSS Vulnerability
+[2017-07-25 11:04:03,725] [DEBUG] checking if url is available
+[2017-07-25 11:04:03,740] [INFO] url connection success 
+[2017-07-25 11:04:03,740] [DEBUG] checking if destination is available
+[2017-07-25 11:04:03,740] [INFO] destination connection success 
+[2017-07-25 11:04:03,740] [INFO] loading default paloads
+[2017-07-25 11:04:03,741] [INFO] loading default paloads success
+[2017-07-25 11:04:03,741] [INFO] 537 payloads loaded
+[2017-07-25 11:04:08,874] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:08:19,998] [DEBUG] checking if url is available
+[2017-07-25 11:08:20,013] [INFO] url connection success 
+[2017-07-25 11:08:20,014] [DEBUG] checking if destination is available
+[2017-07-25 11:08:20,014] [INFO] destination connection success 
+[2017-07-25 11:08:20,014] [INFO] loading default paloads
+[2017-07-25 11:08:20,015] [INFO] loading default paloads success
+[2017-07-25 11:08:20,015] [INFO] 537 payloads loaded
+[2017-07-25 11:08:24,681] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:13:50,018] [DEBUG] checking if url is available
+[2017-07-25 11:13:50,209] [INFO] url connection success 
+[2017-07-25 11:13:50,209] [DEBUG] checking if destination is available
+[2017-07-25 11:13:50,209] [INFO] destination connection success 
+[2017-07-25 11:13:50,209] [INFO] loading default paloads
+[2017-07-25 11:13:50,213] [INFO] loading default paloads success
+[2017-07-25 11:13:50,214] [INFO] 537 payloads loaded
+[2017-07-25 11:13:56,884] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:15:20,550] [DEBUG] checking if url is available
+[2017-07-25 11:15:20,563] [INFO] url connection success 
+[2017-07-25 11:15:20,563] [DEBUG] checking if destination is available
+[2017-07-25 11:15:20,564] [INFO] destination connection success 
+[2017-07-25 11:15:20,564] [INFO] loading default paloads
+[2017-07-25 11:15:20,565] [INFO] loading default paloads success
+[2017-07-25 11:15:20,565] [INFO] 537 payloads loaded
+[2017-07-25 11:15:25,781] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:16:40,688] [DEBUG] checking if url is available
+[2017-07-25 11:16:40,703] [INFO] url connection success 
+[2017-07-25 11:16:40,703] [DEBUG] checking if destination is available
+[2017-07-25 11:16:40,703] [INFO] destination connection success 
+[2017-07-25 11:16:40,704] [INFO] loading default paloads
+[2017-07-25 11:16:40,704] [INFO] loading default paloads success
+[2017-07-25 11:16:40,705] [INFO] 537 payloads loaded
+[2017-07-25 11:16:44,353] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:17:31,528] [DEBUG] checking if url is available
+[2017-07-25 11:17:31,546] [INFO] url connection success 
+[2017-07-25 11:17:31,546] [DEBUG] checking if destination is available
+[2017-07-25 11:17:31,546] [INFO] destination connection success 
+[2017-07-25 11:17:31,547] [INFO] loading default paloads
+[2017-07-25 11:17:31,548] [INFO] loading default paloads success
+[2017-07-25 11:17:31,548] [INFO] 537 payloads loaded
+[2017-07-25 11:17:37,253] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:17:47,298] [DEBUG] checking if url is available
+[2017-07-25 11:17:47,312] [INFO] url connection success 
+[2017-07-25 11:17:47,313] [DEBUG] checking if destination is available
+[2017-07-25 11:17:47,313] [INFO] destination connection success 
+[2017-07-25 11:17:47,313] [INFO] loading default paloads
+[2017-07-25 11:17:47,314] [INFO] loading default paloads success
+[2017-07-25 11:17:47,314] [INFO] 537 payloads loaded
+[2017-07-25 11:17:53,452] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:18:08,607] [DEBUG] checking if url is available
+[2017-07-25 11:18:08,621] [INFO] url connection success 
+[2017-07-25 11:18:08,621] [DEBUG] checking if destination is available
+[2017-07-25 11:18:08,621] [INFO] destination connection success 
+[2017-07-25 11:18:08,622] [INFO] loading default paloads
+[2017-07-25 11:18:08,623] [INFO] loading default paloads success
+[2017-07-25 11:18:08,623] [INFO] 537 payloads loaded
+[2017-07-25 11:18:15,121] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:20:35,469] [DEBUG] checking if url is available
+[2017-07-25 11:20:35,484] [INFO] url connection success 
+[2017-07-25 11:20:35,484] [DEBUG] checking if destination is available
+[2017-07-25 11:20:35,484] [INFO] destination connection success 
+[2017-07-25 11:20:35,485] [INFO] loading default paloads
+[2017-07-25 11:20:35,485] [INFO] loading default paloads success
+[2017-07-25 11:20:35,485] [INFO] 537 payloads loaded
+[2017-07-25 11:21:03,421] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 11:21:26,017] [DEBUG] checking if url is available
+[2017-07-25 11:21:26,033] [INFO] url connection success 
+[2017-07-25 11:21:26,033] [DEBUG] checking if destination is available
+[2017-07-25 11:21:26,033] [INFO] destination connection success 
+[2017-07-25 11:21:26,033] [INFO] loading default paloads
+[2017-07-25 11:21:26,034] [INFO] loading default paloads success
+[2017-07-25 11:21:26,035] [INFO] 537 payloads loaded
+[2017-07-25 11:22:06,495] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 13:26:29,315] [DEBUG] checking if url is available
+[2017-07-25 13:26:29,332] [INFO] url connection success 
+[2017-07-25 13:26:29,332] [DEBUG] checking if destination is available
+[2017-07-25 13:26:29,332] [INFO] destination connection success 
+[2017-07-25 13:26:29,333] [INFO] loading default paloads
+[2017-07-25 13:26:29,334] [INFO] loading default paloads success
+[2017-07-25 13:26:29,334] [INFO] 537 payloads loaded
+[2017-07-25 13:27:00,507] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 13:28:15,785] [DEBUG] checking if url is available
+[2017-07-25 13:28:16,133] [INFO] url connection success 
+[2017-07-25 13:28:16,133] [DEBUG] checking if destination is available
+[2017-07-25 13:28:16,134] [INFO] destination connection success 
+[2017-07-25 13:28:16,134] [INFO] loading default paloads
+[2017-07-25 13:28:16,136] [INFO] loading default paloads success
+[2017-07-25 13:28:16,136] [INFO] 537 payloads loaded
+[2017-07-25 13:28:19,729] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 13:28:40,154] [DEBUG] checking if url is available
+[2017-07-25 13:28:40,644] [INFO] url connection success 
+[2017-07-25 13:28:40,645] [DEBUG] checking if destination is available
+[2017-07-25 13:28:40,645] [INFO] destination connection success 
+[2017-07-25 13:28:40,645] [INFO] loading default paloads
+[2017-07-25 13:28:40,645] [INFO] loading default paloads success
+[2017-07-25 13:28:40,646] [INFO] 537 payloads loaded
+[2017-07-25 13:28:48,918] [CRITICAL] [!] xssfork find XSS Vulnerability
+[2017-07-25 13:32:49,142] [DEBUG] 总共有4个编码脚本
+[2017-07-25 13:32:49,142] [DEBUG] [0]10hex_encode
+[2017-07-25 13:32:49,143] [DEBUG] [1]16hex_encode
+[2017-07-25 13:32:49,143] [DEBUG] [2]addkeywords
+[2017-07-25 13:32:49,143] [DEBUG] [3]uppercase

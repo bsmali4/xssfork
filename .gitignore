@@ -1,0 +1,13 @@
+# Windows:
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python:
+*.pyc
+dist
+build
+.DS_Store
+# My configurations:
+db.ini
+deploy_key_rsa
