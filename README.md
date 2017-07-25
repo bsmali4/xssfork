@@ -69,4 +69,7 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
 root@codersec.net  
 开源地址 https://github.com/bsmali4/xssfork
 记得不要吝啬你的star
+更多信息访问 http://www.codersec.net/2017/07/xssfork%E4%B8%80%E6%AC%BExss%E6%8E%A2%E6%B5%8B%E5%B7%A5%E5%85%B7/
+记得不要吝啬你的star信息
+记得不要吝啬你的star
 
