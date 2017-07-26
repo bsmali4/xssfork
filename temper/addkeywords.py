@@ -4,13 +4,13 @@
 Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
-
+from __future__ import print_function
 import random
 try:
     from __init__ import Temper
     from __init__ import LIGHT_MODEL
     from __init__ import HEAVY_MODEL
-except ImportError, e:
+except ImportError:
     from temper import Temper
     from common.system_config import LIGHT_MODEL
     from common.system_config import HEAVY_MODEL
@@ -63,4 +63,4 @@ if __name__ == "__main__":
     payload = '<script>alert(65534);</script>'
     payloads = set()
     payloads.add(payload)
-    print Temper().temper(payload, number=5, )
+    print(Temper().temper(payload, number=5, ))
