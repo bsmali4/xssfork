@@ -7,6 +7,10 @@ See the file 'doc/COPYING' for copying permission
 import platform
 import sys
 from system_info import WINDOWS
+try:
+    reload                        # Python 2
+except NameError:
+    from importlib import reload  # Python 3
 
 
 def init_encode():
