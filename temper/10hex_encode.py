@@ -4,6 +4,7 @@
 Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
+from __future__ import print_function
 import re
 import traceback
 import random
@@ -12,7 +13,7 @@ try:
     from __init__ import LIGHT_MODEL
     from __init__ import HEAVY_MODEL
     from __init__ import EXCEPTION_LOG_PATH
-except ImportError, e:
+except ImportError:
     from temper import Temper
     from common.system_config import LIGHT_MODEL
     from common.system_config import HEAVY_MODEL
@@ -50,7 +51,7 @@ class Temper(Temper):
                     elif model == 2:
                         encode_str += "&#0{}".format(ord(char))
                 result_str = str.replace(link_content, encode_str)
-        except IndexError, e:
+        except IndexError:
             traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
         return result_str
 
@@ -58,4 +59,4 @@ if __name__ == "__main__":
     payload = '<img src="javascript:alert(65534);">'
     payloads = set()
     payloads.add(payload)
-    print Temper().temper(payload,)
+    print(Temper().temper(payload,))
