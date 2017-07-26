@@ -5,6 +5,10 @@ Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
 import sys
+try:
+    reload                        # Python 2
+except NameError:
+    from importlib import reload  # Python 3
 reload(sys)
 sys.setdefaultencoding('utf8')
 import re
@@ -38,7 +42,7 @@ class UrlClassification(object):
                     regular = u'{}=([\w\.\'\-\u4e00-\u9fa5]*)'.format(key)
                     value = re.findall(regular, temp_keys_value.decode('utf-8'))[0].encode('utf-8')
                     result[key] = value
-        except IndexError, e:
+        except IndexError:
             pass
         return result
 
