@@ -4,7 +4,7 @@
 Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
-
+from __future__ import print_function
 import imp
 import copy
 import traceback
@@ -79,7 +79,7 @@ class PayLoads(object):
                     self.temper_instances[temper_name] = temper_instance
                 logger.setLevel(logging.INFO)
                 logger.info('temper {} is existed'.format(temper_name))
-            except IOError, e:
+            except IOError as e:
                 logger.setLevel(logging.ERROR)
                 logger.error('temper {} is not existed' .format(temper_name))
                 raise TemperNotFoundError(temper_name)
@@ -117,7 +117,7 @@ class PayLoads(object):
                 self.encode_payload_single_temper(temp_payloads, temper_names, model)
                 # 2.混合编码
                 self.encode_payload_mix_temper(temp_payloads, temper_names, model)
-            except TemperNotFoundError, e:
+            except TemperNotFoundError as e:
                 traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
                 exit()
         logger.setLevel(logging.INFO)
@@ -127,4 +127,4 @@ class PayLoads(object):
 if __name__ == "__main__":
     payloads = PayLoads.get_single_instance().get_payloads('addkeywords',)
     for payload in payloads:
-        print payload
+        print(payload)
