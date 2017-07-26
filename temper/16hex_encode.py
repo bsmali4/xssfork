@@ -4,6 +4,7 @@
 Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
+from __future__ import print_function
 import re
 import traceback
 import random
@@ -46,7 +47,7 @@ class Temper(Temper):
                 for char in link_content.replace("\"", ""):
                     encode_str += "&#{}".format(hex(ord(char)).replace("0x", "x"))
                 result_str = str.replace(link_content, encode_str)
-        except IndexError, e:
+        except IndexError:
             traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
         return result_str
 
@@ -54,4 +55,4 @@ if __name__ == "__main__":
     payload = '<img src="javascript:alert(65534);">'
     payloads = set()
     payloads.add(payload)
-    print Temper().temper(payload,)
+    print(Temper().temper(payload,))
