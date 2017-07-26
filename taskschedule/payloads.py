@@ -79,7 +79,7 @@ class PayLoads(object):
                     self.temper_instances[temper_name] = temper_instance
                 logger.setLevel(logging.INFO)
                 logger.info('temper {} is existed'.format(temper_name))
-            except IOError as e:
+            except IOError:
                 logger.setLevel(logging.ERROR)
                 logger.error('temper {} is not existed' .format(temper_name))
                 raise TemperNotFoundError(temper_name)
@@ -117,7 +117,7 @@ class PayLoads(object):
                 self.encode_payload_single_temper(temp_payloads, temper_names, model)
                 # 2.混合编码
                 self.encode_payload_mix_temper(temp_payloads, temper_names, model)
-            except TemperNotFoundError as e:
+            except TemperNotFoundError:
                 traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
                 exit()
         logger.setLevel(logging.INFO)
