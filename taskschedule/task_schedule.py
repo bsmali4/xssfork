@@ -4,6 +4,7 @@
 Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
+from __future__ import print_function
 import copy
 import imp
 import requests
@@ -123,7 +124,7 @@ class TaskSchedule(AbstractObserver):
                                                                                                        headers=headers,
                                                                                                        timeout=5)
                 result = False if req.status_code in fail_status_codes else True
-            except Exception, e:
+            except Exception as e:
                 traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
                 result = False
         return result
@@ -134,5 +135,4 @@ class TaskSchedule(AbstractObserver):
 
 if __name__ == "__main__":
     for pay in PayLoads.get_single_instance().get_payloads(None):
-        print pay
-
+        print(pay)
