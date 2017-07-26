@@ -4,6 +4,7 @@
 Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
+from __future__ import print_function
 import sys
 import time
 import logging
@@ -57,7 +58,7 @@ def help():
 
 
 def print_logo():
-    print logo.LOGO
+    print(logo.LOGO)
 
 
 def print_temper():
@@ -65,15 +66,14 @@ def print_temper():
     logger.setLevel(logging.DEBUG)
     filenames, size = utils.load_pyfiles(TEMPER_PATH)
     logger.debug("总共有{}个编码脚本".format(size))
-    i = 0
-    for temper in filenames:
+    for temper in enumerate(filenames):
         logger.debug('[%s]%s' % (i, temper))
-        i += 1
+
 
 if __name__ == "__main__":
     start_time = time.time()
     print_logo()
     help()
     end_time = time.time()
-    print "This task costs {} s".format(end_time - start_time)
-    print '[*] shutting down at {}'.format(get_current_time())
+    print("This task costs {} s".format(end_time - start_time))
+    print('[*] shutting down at {}'.format(get_current_time()))
