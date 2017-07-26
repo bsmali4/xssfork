@@ -4,6 +4,7 @@
 Copyright (c) 2017 xssfork developers (http://xssfork.codersec.net/)
 See the file 'doc/COPYING' for copying permission
 """
+from __future__ import print_function
 import re
 import sys
 import time
@@ -24,7 +25,6 @@ from payloads import PayLoads
 from url_classification import UrlClassification
 from abstract_observer import AbstractObserver
 from xss_vulnerability import XssVulnerability
-
 
 
 class CompletePacket(dict):
@@ -113,7 +113,7 @@ class FuzzTask(threading.Thread, AbstractObserver):
                 self._child_process_list.append(child_process)
             else:
                 child_process = child_request_process
-        except OSError, e:
+        except OSError:
             self.kill_sub_process()
 
         return child_process, url_payload
@@ -135,7 +135,7 @@ class FuzzTask(threading.Thread, AbstractObserver):
                         XssVulnerability.add_xss_payload(payload)
                         self._stop = True
                         break
-            except OSError, e:
+            except OSError:
                 traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
 
     def kill_sub_process(self):
@@ -145,7 +145,7 @@ class FuzzTask(threading.Thread, AbstractObserver):
                 temp_child_process.stdout.close()
                 temp_child_process.terminate()
                 self._child_process_list.remove(temp_child_process)
-            except OSError, e:
+            except OSError:
                 pass
                 # traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
 
@@ -153,7 +153,7 @@ class FuzzTask(threading.Thread, AbstractObserver):
         result = ""
         try:
             result = child_process.stdout.readlines()[0]
-        except IndexError, e:
+        except IndexError:
             pass
         return result
 
@@ -177,12 +177,12 @@ class FuzzTask(threading.Thread, AbstractObserver):
                     logger.critical("[!] xssfork find XSS Vulnerability")
                 try:
                     payload = xss_payloads.pop()
-                    print "---"
-                    print "    Status: Vulnerable"
-                    print "    payload_url: {}".format(payload.get('url'))
+                    print("---")
+                    print("    Status: Vulnerable")
+                    print("    payload_url: {}".format(payload.get('url')))
                     if payload.get('data') is not None:
-                        print "    payload_data: {}".format(payload.get('data'))
-                    print "---"
+                        print("    payload_data: {}".format(payload.get('data')))
+                    print("---")
                 except Exception:
                     traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
 
