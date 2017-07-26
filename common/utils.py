@@ -30,7 +30,7 @@ def start_with(string, substring):
     try:
         if string.strip().index(substring) == 0:
             return True
-    except Exception as e:
+    except Exception:
         return False
 
 
@@ -38,5 +38,5 @@ def end_with(string, substring):
     try:
         if string[len(string) - 1] == substring:
             return True
-    except Exception as e:
+    except Exception:
         return False
