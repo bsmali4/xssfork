@@ -193,21 +193,6 @@ if __name__ == "__main__":
 效果
 
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-28/70449749.jpg)
-#免责申明
-xssfork保证竭诚为网络用户提供最安全的上网服务，但因不可避免的问题导致出现的问题，我们尽力解决，期间引起的问题我们不承担以下责任。  
-###第 一 条  
-xssfork使用者因为违反本声明的规定而触犯中华人民共和国法律的，一切后果自己负担,xssfork.codersec.net站点以及作者不承担任何责任。 
-###第 二 条  
-凡以任何方式直接、间接使用xssfork资料者，视为自愿接受xssfork.codersec.net声明的约束。 
-###第 三 条  
-本声明未涉及的问题参见国家有关法律法规，当本声明与国家法律法规冲突时，以国家法律法规为准。 
-### 第 四 条  
-对于因不可抗力或xssfork不能控制的原因造成的网络服务中断或其它缺陷，xssfork.codersec.net网站以及作者不承担任何责任。
-### 第 五 条  
-xssfork之声明以及其修改权、更新权及最终解释权均属xssfork.codersec.net网所有。
-
-
-
 
 ## xssfork简介
 xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检测xss漏洞。
@@ -275,6 +260,8 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
  python xssfork.py -u "xx" -d "xxx" -D "输出位置"
  带cookie
  python xssfork.py -u "xx" -c "xx"
+ 
+ 支持伪静态的检测
 ## 说明
 开源只为分享，请勿将本脚本做任何商业性质的集成。开发的时候，有可能很多情况没有考虑到，如果你有更好的建议或者发现bug，可以联系我邮箱,xssfork.codersec.net网站还在建设中,github不要吝啬你的star。
 root@codersec.net  
