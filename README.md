@@ -1,3 +1,5 @@
+更多信息访问[http://xssfork.secbug.net/](http://xssfork.secbug.net/)
+
 更新xssforkapi,提供分布式部署方案。
 #概述
 xssfork是新一代xss漏洞探测工具，其开发的目的是帮助安全从业者高效率的检测xss安全漏洞，关于xss的更多详情可以移步[Cross-site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))。不管什么语言，传统的xss探测工具，一般都是采用第三方库向服务器发送一个注入恶意代码的请求，其工作原理是采用payload in response的方式，即通过检测响应包中payload的完整性来判断，这种方式缺陷，很多。
