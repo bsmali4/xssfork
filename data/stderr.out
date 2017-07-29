@@ -1,0 +1,96 @@
+[37m[16:43:24][0m [37m[DEBUG] checking if url is available[0m
+[31m[16:43:29][0m [31m[ERROR] url connection fail, please check your input [0m
+[37m[16:46:45][0m [37m[DEBUG] checking if url is available[0m
+[32m[16:46:45][0m [32m[INFO] url connection success [0m
+[37m[16:46:45][0m [37m[DEBUG] checking if destination is available[0m
+[32m[16:46:45][0m [32m[INFO] destination connection success [0m
+[32m[16:46:45][0m [32m[INFO] loading default paloads[0m
+[32m[16:46:45][0m [32m[INFO] loading default paloads success[0m
+[32m[16:46:45][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[16:47:24][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[16:49:55][0m [37m[DEBUG] checking if url is available[0m
+[32m[16:49:55][0m [32m[INFO] url connection success [0m
+[37m[16:49:55][0m [37m[DEBUG] checking if destination is available[0m
+[32m[16:49:55][0m [32m[INFO] destination connection success [0m
+[32m[16:49:55][0m [32m[INFO] loading default paloads[0m
+[32m[16:49:55][0m [32m[INFO] loading default paloads success[0m
+[32m[16:49:55][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[16:50:13][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[18:45:46][0m [37m[DEBUG] checking if url is available[0m
+[32m[18:45:46][0m [32m[INFO] url connection success [0m
+[37m[18:45:46][0m [37m[DEBUG] checking if destination is available[0m
+[32m[18:45:46][0m [32m[INFO] destination connection success [0m
+[32m[18:45:46][0m [32m[INFO] loading default paloads[0m
+[32m[18:45:46][0m [32m[INFO] loading default paloads success[0m
+[32m[18:45:46][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[18:46:23][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[21:12:58][0m [37m[DEBUG] checking if url is available[0m
+[32m[21:12:58][0m [32m[INFO] url connection success [0m
+[37m[21:12:58][0m [37m[DEBUG] checking if destination is available[0m
+[32m[21:12:58][0m [32m[INFO] destination connection success [0m
+[32m[21:12:58][0m [32m[INFO] loading default paloads[0m
+[32m[21:12:58][0m [32m[INFO] loading default paloads success[0m
+[32m[21:12:58][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[21:13:29][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[21:59:01][0m [37m[DEBUG] checking if url is available[0m
+[32m[21:59:01][0m [32m[INFO] url connection success [0m
+[37m[21:59:01][0m [37m[DEBUG] checking if destination is available[0m
+[32m[21:59:01][0m [32m[INFO] destination connection success [0m
+[32m[21:59:01][0m [32m[INFO] loading default paloads[0m
+[32m[21:59:01][0m [32m[INFO] loading default paloads success[0m
+[32m[21:59:01][0m [32m[INFO] 541 payloads loaded[0m
+[33m[21:59:26][0m [33m[WARNING] [!] xssfork can not find XSS Vulnerability[0m
+[37m[22:03:09][0m [37m[DEBUG] checking if url is available[0m
+[32m[22:03:09][0m [32m[INFO] url connection success [0m
+[37m[22:03:09][0m [37m[DEBUG] checking if destination is available[0m
+[32m[22:03:09][0m [32m[INFO] destination connection success [0m
+[32m[22:03:09][0m [32m[INFO] loading default paloads[0m
+[32m[22:03:09][0m [32m[INFO] loading default paloads success[0m
+[32m[22:03:09][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[22:03:38][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[22:04:44][0m [37m[DEBUG] checking if url is available[0m
+[32m[22:04:44][0m [32m[INFO] url connection success [0m
+[37m[22:04:44][0m [37m[DEBUG] checking if destination is available[0m
+[32m[22:04:44][0m [32m[INFO] destination connection success [0m
+[32m[22:04:44][0m [32m[INFO] loading default paloads[0m
+[32m[22:04:44][0m [32m[INFO] loading default paloads success[0m
+[32m[22:04:44][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[22:05:24][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[22:06:04][0m [37m[DEBUG] checking if url is available[0m
+[32m[22:06:04][0m [32m[INFO] url connection success [0m
+[37m[22:06:04][0m [37m[DEBUG] checking if destination is available[0m
+[32m[22:06:04][0m [32m[INFO] destination connection success [0m
+[32m[22:06:04][0m [32m[INFO] loading default paloads[0m
+[32m[22:06:04][0m [32m[INFO] loading default paloads success[0m
+[32m[22:06:04][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[22:06:39][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[22:06:49][0m [37m[DEBUG] checking if url is available[0m
+[32m[22:06:49][0m [32m[INFO] url connection success [0m
+[37m[22:06:49][0m [37m[DEBUG] checking if destination is available[0m
+[32m[22:06:49][0m [32m[INFO] destination connection success [0m
+[32m[22:06:49][0m [32m[INFO] loading default paloads[0m
+[32m[22:06:49][0m [32m[INFO] loading default paloads success[0m
+[32m[22:06:49][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[22:07:28][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[22:08:05][0m [37m[DEBUG] checking if url is available[0m
+[32m[22:08:05][0m [32m[INFO] url connection success [0m
+[37m[22:08:05][0m [37m[DEBUG] checking if destination is available[0m
+[32m[22:08:05][0m [32m[INFO] destination connection success [0m
+[32m[22:08:05][0m [32m[INFO] loading default paloads[0m
+[32m[22:08:05][0m [32m[INFO] loading default paloads success[0m
+[32m[22:08:05][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[22:08:34][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[22:16:26][0m [37m[DEBUG] checking if url is available[0m
+[31m[22:16:31][0m [31m[ERROR] url connection fail, please check your input [0m
+[37m[22:17:34][0m [37m[DEBUG] checking if url is available[0m
+[32m[22:17:35][0m [32m[INFO] url connection success [0m
+[37m[22:17:35][0m [37m[DEBUG] checking if destination is available[0m
+[32m[22:17:35][0m [32m[INFO] destination connection success [0m
+[32m[22:17:35][0m [32m[INFO] loading default paloads[0m
+[32m[22:17:35][0m [32m[INFO] loading default paloads success[0m
+[32m[22:17:35][0m [32m[INFO] 541 payloads loaded[0m
+[01;31m[22:18:02][0m [01;31m[CRITICAL] [!] xssfork find XSS Vulnerability[0m
+[37m[22:49:15][0m [37m[DEBUG] checking if url is available[0m
+[31m[22:49:20][0m [31m[ERROR] url connection fail, please check your input [0m
+[37m[22:55:07][0m [37m[DEBUG] checking if url is available[0m
+[31m[22:55:12][0m [31m[ERROR] url connection fail, please check your input [0m

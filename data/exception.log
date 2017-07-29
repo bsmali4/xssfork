@@ -1,0 +1,1137 @@
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/web_service.py", line 283, in server
+    run(host='localhost', port=port, quiet=True, debug=False, server=adapter)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../thirdparty/bottle/bottle.py", line 3332, in run
+    server.run(app)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../thirdparty/bottle/bottle.py", line 3054, in run
+    server.serve_forever()
+  File "/Library/Python/2.7/site-packages/gevent/baseserver.py", line 360, in serve_forever
+    self.start()
+  File "/Library/Python/2.7/site-packages/gevent/baseserver.py", line 304, in start
+    self.init_socket()
+  File "/Library/Python/2.7/site-packages/gevent/pywsgi.py", line 1451, in init_socket
+    StreamServer.init_socket(self)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 127, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 138, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 228, in _tcp_listener
+    sock.bind(address)
+  File "<string>", line 1, in bind
+error: [Errno 48] Address already in use: ('localhost', 2333)
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/web_service.py", line 283, in server
+    run(host='localhost', port=port, quiet=True, debug=False, server=adapter)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../thirdparty/bottle/bottle.py", line 3332, in run
+    server.run(app)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../thirdparty/bottle/bottle.py", line 3054, in run
+    server.serve_forever()
+  File "/Library/Python/2.7/site-packages/gevent/baseserver.py", line 360, in serve_forever
+    self.start()
+  File "/Library/Python/2.7/site-packages/gevent/baseserver.py", line 304, in start
+    self.init_socket()
+  File "/Library/Python/2.7/site-packages/gevent/pywsgi.py", line 1451, in init_socket
+    StreamServer.init_socket(self)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 127, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 138, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 228, in _tcp_listener
+    sock.bind(address)
+  File "<string>", line 1, in bind
+error: [Errno 48] Address already in use: ('localhost', 2333)
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/web_service.py", line 283, in server
+    run(host='localhost', port=port, quiet=True, debug=False, server=adapter)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../thirdparty/bottle/bottle.py", line 3332, in run
+    server.run(app)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../thirdparty/bottle/bottle.py", line 3054, in run
+    server.serve_forever()
+  File "/Library/Python/2.7/site-packages/gevent/baseserver.py", line 360, in serve_forever
+    self.start()
+  File "/Library/Python/2.7/site-packages/gevent/baseserver.py", line 304, in start
+    self.init_socket()
+  File "/Library/Python/2.7/site-packages/gevent/pywsgi.py", line 1451, in init_socket
+    StreamServer.init_socket(self)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 127, in init_socket
+    self.socket = self.get_listener(self.address, self.backlog, self.family)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 138, in get_listener
+    return _tcp_listener(address, backlog=backlog, reuse_addr=cls.reuse_addr, family=family)
+  File "/Library/Python/2.7/site-packages/gevent/server.py", line 228, in _tcp_listener
+    sock.bind(address)
+  File "<string>", line 1, in bind
+error: [Errno 48] Address already in use: ('localhost', 2333)
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/web_service.py", line 262, in task_result
+    payload = XssforkTask(id=task_id).find()[0][7]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_schedule.py", line 129, in check_url_is_alive
+    else requests.post(url, verify=True, data=data, headers=headers, timeout=5)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 111, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 57, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 475, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 585, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/adapters.py", line 459, in send
+    raise ConnectTimeout(e, request=request)
+ConnectTimeout: HTTPConnectionPool(host='10.211.55.3', port=80): Max retries exceeded with url: /xsstest/cookie_xss_post.php (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x10efed1d0>, 'Connection to 10.211.55.3 timed out. (connect timeout=5)'))
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/web_service.py", line 262, in task_result
+    payload = XssforkTask(id=task_id).find()[0][7]
+IndexError: list index out of range
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/../taskschedule/task_schedule.py", line 129, in check_url_is_alive
+    else requests.post(url, verify=True, data=data, headers=headers, timeout=5)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 111, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 57, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 475, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 585, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/adapters.py", line 459, in send
+    raise ConnectTimeout(e, request=request)
+ConnectTimeout: HTTPConnectionPool(host='10.211.55.3', port=80): Max retries exceeded with url: /xsstest/cookie_xss_post.php (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x10e5341d0>, 'Connection to 10.211.55.3 timed out. (connect timeout=5)'))
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/桌面打包/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_schedule.py", line 129, in check_url_is_alive
+    else requests.post(url, verify=True, data=data, headers=headers, timeout=5)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 111, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 57, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 475, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 585, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/adapters.py", line 459, in send
+    raise ConnectTimeout(e, request=request)
+ConnectTimeout: HTTPConnectionPool(host='10.211.55.3', port=80): Max retries exceeded with url: /xsstest/cookie_xss_post.php (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x1084231d0>, 'Connection to 10.211.55.3 timed out. (connect timeout=5)'))
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 40, in execute
+    cursor.execute(sql)
+OperationalError: table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 66, in init_tables
+    execute(sql)
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/taskschedule/../sql/config.py", line 45, in execute
+    raise XssforkTaskError(e)
+XssforkTaskError: 执行sql数据失败, table "xssfork_task" already exists
+Traceback (most recent call last):
+  File "/Users/bsmali4/Desktop/pycharm/xssfork/common/../taskschedule/task_schedule.py", line 129, in check_url_is_alive
+    else requests.post(url, verify=True, data=data, headers=headers, timeout=5)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 111, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/api.py", line 57, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 475, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/Library/Python/2.7/site-packages/requests/sessions.py", line 585, in send
+    r = adapter.send(request, **kwargs)
+  File "/Library/Python/2.7/site-packages/requests/adapters.py", line 459, in send
+    raise ConnectTimeout(e, request=request)
+ConnectTimeout: HTTPConnectionPool(host='10.211.55.3', port=80): Max retries exceeded with url: /xsstest/cookie_xss_post.php (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.HTTPConnection object at 0x1013e81d0>, 'Connection to 10.211.55.3 timed out. (connect timeout=5)'))
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/utils.py", line 40, in start_with
+    if string.strip().index(substring) == 0:
+ValueError: substring not found
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
+Traceback (most recent call last):
+  File "/Users/bsmali4/Documents/xssfork/common/../taskschedule/task_thread.py", line 191, in notify
+    payload = xss_payloads.pop()
+IndexError: pop from empty list
