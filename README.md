@@ -1,18 +1,18 @@
 更多信息访问[http://xssfork.secbug.net/](http://xssfork.secbug.net/)
 
 更新xssforkapi,提供分布式部署方案。
-#概述  
+# 概述  
 xssfork是新一代xss漏洞探测工具，其开发的目的是帮助安全从业者高效率的检测xss安全漏洞，关于xss的更多详情可以移步[Cross-site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))。不管什么语言，传统的xss探测工具，一般都是采用第三方库向服务器发送一个注入恶意代码的请求，其工作原理是采用payload in response的方式，即通过检测响应包中payload的完整性来判断，这种方式缺陷，很多。
 例如
 1.不能检测dom类xss(无法从源代码中检查)
 2.不能模拟真正的浏览器
 3.网页js无法交互,第三方库不认识网页中的js的代码。
 与传统的工具相比，xssfork使用的是 webkit内核的浏览器phantomjs，其可以很好的模拟浏览器。工具分为两个部分，xssfork和xssforkapi，其中xssfork在对网站fuzz xss的时候会调用比较多的payload。
-#两者结合  
+# 两者结合  
 可以使用xssforkapi来做批量xss检测工具,xssfork做深度fuzz工具。xssforkapi这种webservice方式十分适合分布式部署。
-#创建任务  
+# 创建任务  
 关于key,为了保证外部不能非法调用服务，xssforkapi采用的是http协议验证key的方式。
-##key的获取方式  
+## key的获取方式  
 在每次启动xssforkapi的时候，会将key写入到根目录authentication.key中，你也可以在每次启动服务的时候看到key。
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-28/74466819.jpg)
 key默认是每次启动服务不更新的，你也可以在下一次启动服务的时候强制更新，只需要启动的时候指定--refresh True即可。值得注意的时候，refresh指定为true之后，原有的保存在data目录下xssfork.db将会清除，这意味着你将清除你之前所有的检测纪录。
