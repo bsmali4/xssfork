@@ -1,5 +1,29 @@
 更多信息访问[http://xssfork.secbug.net/](http://xssfork.secbug.net/)
 
+由于使用的是phantomjs，所以使用期间可能会造成内存，cpu消耗过大。对网络造成的破坏，本人不负任何法律责任。
+
+## 免责申明
+
+xssfork保证竭诚为网络用户提供最安全的上网服务，但因不可避免的问题导致出现的问题，我们尽力解决，期间引起的问题我们不承担以下责任。
+### 第 一 条
+
+xssfork使用者因为违反本声明的规定而触犯中华人民共和国法律的，一切后果自己负担,xssfork.secbug.net站点以及作者不承担任何责任。
+### 第 二 条
+
+凡以任何方式直接、间接使用xssfork资料者，视为自愿接受xssfork.secbug.net声明的约束。
+### 第 三 条
+
+本声明未涉及的问题参见国家有关法律法规，当本声明与国家法律法规冲突时，以国家法律法规为准。
+### 第 四 条
+
+对于因不可抗力或xssfork不能控制的原因造成的网络服务中断或其它缺陷，xssfork.secbug.net网站以及作者不承担任何责任。
+### 第 五 条
+xssfork之声明以及其修改权、更新权及最终解释权均属xssfork.secbug.net网所有。
+
+
+
+更多信息访问[http://xssfork.secbug.net/](http://xssfork.secbug.net/)
+
 更新xssforkapi,提供分布式部署方案。
 # 概述  
 xssfork是新一代xss漏洞探测工具，其开发的目的是帮助安全从业者高效率的检测xss安全漏洞，关于xss的更多详情可以移步[Cross-site Scripting (XSS)](https://www.owasp.org/index.php/Cross-site_Scripting_(XSS))。不管什么语言，传统的xss探测工具，一般都是采用第三方库向服务器发送一个注入恶意代码的请求，其工作原理是采用payload in response的方式，即通过检测响应包中payload的完整性来判断，这种方式缺陷，很多。
@@ -263,7 +287,7 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
  
  支持伪静态的检测
 ## 说明
-开源只为分享，请勿将本脚本做任何商业性质的集成。开发的时候，有可能很多情况没有考虑到，如果你有更好的建议或者发现bug，可以联系我邮箱,xssfork.codersec.net网站还在建设中,github不要吝啬你的star。
+开源只为分享，请勿将本脚本做任何商业性质的集成。开发的时候，有可能很多情况没有考虑到，如果你有更好的建议或者发现bug，
 root@codersec.net  
 开源地址 https://github.com/bsmali4/xssfork
 记得不要吝啬你的star
