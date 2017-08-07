@@ -68,4 +68,4 @@ def init_tables(refresh=False):
         traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
 
 if __name__ == "__main__":
-    init(True)
+    init_tables(refresh=True)
