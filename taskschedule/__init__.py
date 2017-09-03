@@ -36,7 +36,7 @@ from common.path import XSS_FORK_STDOUT_FILE
 from sql.xssfork_task import XssforkTask
 from common.system_info import IS_WIN
 try:
-	from thirdparty.requests import request
+	from thirdparty import requests
 except Exception:
 	import requests
 from common.path import FUZZ_API_DIC_PATH
