@@ -7,7 +7,6 @@ See the file 'doc/COPYING' for copying permission
 from __future__ import print_function
 import copy
 import imp
-import requests
 import logging
 import Queue
 import traceback
@@ -17,15 +16,18 @@ from __init__ import FUZZ_DIC_PATH
 from __init__ import get_phantomjs_path
 from __init__ import read_file_to_array
 from __init__ import TEMPER_PATH
-from __init__ import request
+from __init__ import requests
 from __init__ import MAX_THREAD_NUM
 from __init__ import MAX_LEVEL
 from __init__ import EXCEPTION_LOG_PATH
 from payloads import PayLoads
+from __init__ import HTTP_GET_METHOD
+from __init__ import HTTP_POST_METHOD
 from task_thread import FuzzTask
 from task_thread import CompletePacket
 from abstract_observer import AbstractObserver
 from xss_vulnerability import XssVulnerability
+from url_classification import UrlClassification
 
 
 class TaskSchedule(AbstractObserver):
@@ -50,6 +52,7 @@ class TaskSchedule(AbstractObserver):
     def main(self):
         if self._complete_packet.url is not None:
             self.check_complete_packet_is_alive()
+            self.check_has_params()
             if self._use_api:
                 payloads = PayLoads.get_single_instance().get_payloads(self._tempers, self._use_api, self._model,)
             else:
@@ -71,7 +74,7 @@ class TaskSchedule(AbstractObserver):
             for fuzz_thread in self._fuzz_threads:
                 alive = alive or fuzz_thread.isAlive()
                 stop = stop or fuzz_thread._stop
-            if not alive or stop or FuzzTask.working_num >=payloads_num:
+            if not alive or stop or FuzzTask.working_num >= (payloads_num - self._thread_num):
                 break
 
     def create_thread(self, payloads_num):
@@ -133,6 +136,24 @@ class TaskSchedule(AbstractObserver):
                 result = False
         return result
 
+    def check_has_params(self):
+        logger = log.get_logger()
+        logger.setLevel(logging.DEBUG)
+        logger.debug("checking if has_params")
+        url_payload = ""
+        data_payload = ""
+        if self._complete_packet.data is not None:
+            data_payload = UrlClassification.simplify_url(self._complete_packet.data, HTTP_POST_METHOD)
+        else:
+            url_payload = UrlClassification.simplify_url(self._complete_packet.url, HTTP_GET_METHOD)
+        if "bsmali4" in data_payload or "bsmali4" in url_payload:
+            logger.setLevel(logging.INFO)
+            logger.info("there is params, xssfork will work")
+        else:
+            logger.setLevel(logging.ERROR)
+            logger.error("there is no params, please check your input ")
+            exit()
+
     @staticmethod
     def get_thread_num_by_level(level):
         return (MAX_THREAD_NUM/MAX_LEVEL)*level
@@ -140,4 +161,3 @@ class TaskSchedule(AbstractObserver):
 if __name__ == "__main__":
     for pay in PayLoads.get_single_instance().get_payloads(None):
         print (pay)
-
