@@ -8,8 +8,6 @@ See the file 'doc/COPYING' for copying permission
 import sys
 import re
 import urllib
-from __init__ import start_with
-from __init__ import end_with
 from __init__ import HTTP_POST_METHOD
 from __init__ import HTTP_GET_METHOD
 try:
@@ -91,7 +89,7 @@ class UrlClassification(object):
 
     @staticmethod
     def surround_with_single_quote(value):
-        if start_with(value, "'") and end_with(value, "'"):
+        if str(value).startswith("'") and str(value).endswith("'"):
             return True, value[1:-1]
         else:
             return False, value
