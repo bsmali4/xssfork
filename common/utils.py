@@ -33,25 +33,7 @@ def load_pyfiles(path):
     except Exception:
         traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
     return filenames, size
-
-
-def start_with(string, substring):
-    try:
-        if string.strip().index(substring) == 0:
-            return True
-    except Exception:
-        traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
-    return False
-
-
-def end_with(string, substring):
-    try:
-        if string[len(string) - 1] == substring:
-            return True
-    except Exception:
-        traceback.print_exc(file=open(EXCEPTION_LOG_PATH, 'a'))
-    return False
-
+    
 
 def make_random_number(length=8, chars=string.ascii_letters + string.digits):
     return ''.join([choice(chars) for i in range(length)])
