@@ -292,3 +292,4 @@ root@codersec.net
 开源地址 https://github.com/bsmali4/xssfork
 记得不要吝啬你的star
 
+更新日志:2017-10-24 修复卡住进度bug
