@@ -139,12 +139,12 @@ class FuzzTask(threading.Thread, AbstractObserver):
             try:
                 child_process = None
                 while child_process is None:
-                    child_process, payload = self.sub_process_open(payload)
+                    child_process, payload_dic = self.sub_process_open(payload)
                 response = self.get_exec_result(child_process)
                 FuzzTask.print_fuzz_progress(self._payloads_num)
                 for hook_string in hook_list:
                     if hook_string in response:
-                        XssVulnerability.add_xss_payload(payload)
+                        XssVulnerability.add_xss_payload(payload_dic)
                         self._stop = True
                         break
             except OSError as e:
