@@ -23,8 +23,6 @@ from common.path import FUZZ_SCRIPT_PATH
 from exception.complete_packet_exception import CompletePacketNotFoundUrl
 from common.encode import url_encode
 from common.hook_string import hook_list
-from common.utils import start_with
-from common.utils import end_with
 from common.system_time import get_current_time
 from common.system_config import LIGHT_MODEL
 from common.system_config import HEAVY_MODEL
