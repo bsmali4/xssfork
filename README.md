@@ -230,7 +230,7 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
 ## 编码脚本
 由于基础的payload模块，我收集了71个。
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-24/38956876.jpg)
-基础pyaload会在现有的基础上，会添加上各种闭合的情况。
+基础payload会在现有的基础上，会添加上各种闭合的情况。
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-24/58148554.jpg)
 除了这些基础的payload,xssfork还提供了几个编码脚本，查看脚本，可以看help
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-24/12237078.jpg)
@@ -255,7 +255,7 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
 &lt;script&gt;alert(65534);&lt;/script&gt;
 变成
 &lt;&lt;script&gt;script&gt;alert(65534);&lt;/script&gt;
-当然默认开启的是轻量模式，即只返回一个payload，开启重量模式，可以生成更加丰富的pyaload，效果如下
+当然默认开启的是轻量模式，即只返回一个payload，开启重量模式，可以生成更加丰富的payload，效果如下
 &lt;script&gt;alert(65534);&lt;/script&gt;  
 &lt;script&gt;alert(65534);&lt;/ScrIpt&gt;  
 &lt;ScrIpt&gt;alert(65534);&lt;/sCrIpt&gt;  
