@@ -1,3 +1,6 @@
+##  重要说明
+kali下无法使用的话，请下载正确的[phantomjs](http://phantomjs.org/download.html) 到目录thirdparty/phantomjs/Linux
+
 更多信息访问[http://xssfork.secbug.net/](http://xssfork.secbug.net/)
 
 由于使用的是phantomjs，所以使用期间可能会造成内存，cpu消耗过大。对网络造成的破坏，本人不负任何法律责任。
