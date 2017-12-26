@@ -233,7 +233,7 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
 ## 编码脚本
 由于基础的payload模块，我收集了71个。
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-24/38956876.jpg)
-基础pyaload会在现有的基础上，会添加上各种闭合的情况。
+基础payload会在现有的基础上，会添加上各种闭合的情况。
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-24/58148554.jpg)
 除了这些基础的payload,xssfork还提供了几个编码脚本，查看脚本，可以看help
 ![](http://ohsqlm7gj.bkt.clouddn.com/17-7-24/12237078.jpg)
