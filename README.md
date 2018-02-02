@@ -258,7 +258,7 @@ xssfork作为sicklescan的一个功能模块，其开发主要目的是用于检
 &lt;script&gt;alert(65534);&lt;/script&gt;
 变成
 &lt;&lt;script&gt;script&gt;alert(65534);&lt;/script&gt;
-当然默认开启的是轻量模式，即只返回一个payload，开启重量模式，可以生成更加丰富的pyaload，效果如下
+当然默认开启的是轻量模式，即只返回一个payload，开启重量模式，可以生成更加丰富的payload，效果如下
 &lt;script&gt;alert(65534);&lt;/script&gt;  
 &lt;script&gt;alert(65534);&lt;/ScrIpt&gt;  
 &lt;ScrIpt&gt;alert(65534);&lt;/sCrIpt&gt;  
